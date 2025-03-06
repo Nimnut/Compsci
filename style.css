@@ -144,11 +144,11 @@ table tr:nth-child(even) {
 
 @font-face {
   font-family: MS Gothic1;
-  src:url(../fonts/MS-Gothic-01.ttf)
+  src:url(fonts/MS-Gothic-01.ttf)
 }
 
 @font-face {
   font-family: MS Gothic2;
-  src:url(../fonts/MS-PGothic-03.ttf)
+  src:url(fonts/MS-PGothic-03.ttf)
 }
 
