@@ -154,4 +154,5 @@ table tr:nth-child(even) {
 
 body {
   background-image: url(images/chocstrbg.png);
+  background-repeat: repeat;
 }
