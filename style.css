@@ -152,3 +152,6 @@ table tr:nth-child(even) {
   src:url(fonts/MS-PGothic-03.ttf)
 }
 
+body {
+  background-image: url(images/chocstrbg.png);
+}
