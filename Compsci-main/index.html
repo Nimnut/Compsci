@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn about vocal synthesizers like VOCALOID, Synthesizer V, and UTAU. Explore their features, differences, and how to use them.">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <title>All About VOCALOIDS!</title>
+</head>
+
+<body>
+
+  <div id="header" fetchpriority="high"></div>
+
+  <main class="showmargin">
+
+    <div class="centerparagraph">
+      <h2>Hello!</h2>
+      <img src="images/hello.gif" alt="Hello image" width="200">
+      <p>Welcome to <strong>All About Vocal Synthesizers</strong>!
+        Whether you're a music producer, a tech enthusiast, or just curious about how virtual singers are created,
+        you've come to the right place. Here, we’ll explore the fascinating world of vocal synthesizers—software that
+        brings digital voices to life.</p>
+    </div>
+
+    <div style="display: grid;
+  grid-template-columns: auto auto;">
+
+      <div class="centerparagraph">
+        <h2>What is VOCALOID?</h2>
+        <p>Vocaloid is a singing voice synthesizer software product designed by Yamaha Corporation and Music technology
+          Group. It was commercially released in 2004.
+          The software was ultimately developed into the commercial product "Vocaloid" that was released in 2004.</p>
+      </div>
+
+      <div class="centerparagraph">
+        <h2>What is a Vocal Synthesizer?</h2>
+        <p>A Vocal Synthesizer is a computer program that is used to create a human voice.
+          The main types of vocal synthesizers are text-to-speech, voice conversion, and singing synthesizers.
+          The type of synths I will be focusing on are VOCALOID singing synthesizers.</p>
+      </div>
+    </div>
+
+    <div class="centerparagraph">
+      <h2>Most Well Known Voicebanks</h2>
+      <p>Click on them to learn more!</p>
+      <a href="Hatsune_Miku.html" class="tooltip">
+        <img class="vocaloid" src="images/Hatsune_Miku.png" alt="Hatsune Miku" height="150"><span class="tooltiptext">Hatsune Miku</span>
+      </a>
+
+      <a href="Kagamine_Rin_Len.html" class="tooltip">
+        <img class="vocaloid" src="images/Kagamine_Rin_Len.png" alt="Kagamine Rin and Len" height="150"><span class="tooltiptext">Kagamine Rin and Len</span>
+      </a>
+
+      <a href="Megurine_Luka.html" class="tooltip">
+        <img class="vocaloid" src="images/Megurine_Luka.png" alt="Megurine Luka" height="150"><span class="tooltiptext">Megurine Luka</span>
+      </a>
+
+      <a href="MEIKO.html" class="tooltip">
+        <img class="vocaloid" src="images/MEIKO.png" alt="MEIKO" height="150"><span class="tooltiptext">MEIKO</span>
+      </a>
+
+      <a href="KAITO.html" class="tooltip">
+        <img class="vocaloid" src="images/KAITO.png" alt="KAITO" height="150"><span class="tooltiptext">KAITO</span>
+      </a>
+    </div>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("header.html")
+        .then(response => {
+          if (!response.ok) throw new Error("Header not found");
+          return response.text();
+        })
+        .then(data => document.getElementById("header").innerHTML = data)
+        .catch(error => console.error("Error loading header:", error));
+    });
+  </script>
+
+</body>
+
+</html>

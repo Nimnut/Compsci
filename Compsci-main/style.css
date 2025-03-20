@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/chocstrbg.png);
+  background-repeat: repeat;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+header {
+  background-color: #F4C2C2;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: MS Gothic1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+header p {
+  font-family: MS Gothic1;
+  font-size: 1rem
+}
+
+nav {
+  background-color: #F8AFA6;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+hr.fakeborder {
+  height: 0;
+  border: none;
+  border-bottom: dotted#F8AFA6;
+  border-width: 30px;
+  position: relative;
+  bottom: 15px;
+  z-index: -1;
+}
+
+hr.fakeborder2 {
+  height: 0;
+  border: none;
+  border-bottom: dotted#F8AFA6;
+  border-width: 30px;
+  position: relative;
+  left: 30px;
+  bottom: 45px;
+  z-index: -1;
+}
+
+div .headerdeco {
+  position: relative;
+  left: -30px;
+}
+
+nav a {
+  font-family: MS Gothic1;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+
+}
+
+nav a:hover {
+  background-color: #FA8072;
+  border-radius: 10px;
+}
+
+.showmargin {
+  margin: 20px;
+}
+
+main {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: fit-content;
+  margin: 20px auto;
+}
+
+main h2 {
+  font-family: MS Gothic1;
+  color: #6b0036;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+main p,
+pre,
+ol,
+ul {
+  font-family: MS Gothic2;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-wrap: wrap;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1.2rem
+}
+
+ol p.q {
+  color: #6b0036;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #F4C2C2;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: #FA8072;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #F08080;
+}
+
+table {
+  width: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #F4C2C2;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #F8AFA6;
+}
+
+table tr:nth-child(even) {
+  background-color: #FDEDEC;
+}
+
+.centerparagraph {
+  text-align: center;
+  text-wrap: wrap;
+  padding: 30px 100px;
+}
+
+img.vocaloid {
+  margin: 20px 20px 5px 20px;
+}
+
+@font-face {
+  font-family: MS Gothic1;
+  src: url(fonts/MS-Gothic-01.ttf)
+}
+
+@font-face {
+  font-family: MS Gothic2;
+  src: url(fonts/MS-PGothic-03.ttf)
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #FA8072;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #FA8072 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  font-family: MS Gothic1;
+  font-weight: bold;
+  visibility: visible;
+  opacity: 60%;
+}

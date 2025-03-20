@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about vocal synthesizers like VOCALOID, Synthesizer V, and UTAU. Explore their features, differences, and how to use them.">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>All About VOCALOIDS!</title>
+</head>
+
+<body>
+
+    <div id="header" fetchpriority="high"></div>
+
+    <main>
+        <h2>Credits!</h2>
+        <ul>
+            <li>Background</li>
+            <p><a href="https://www.lejlart.com/apple.html" target="_blank">Appledust</a></p>
+        </ul>
+
+        <ul>
+            <li>Greeting img</li>
+        <p><a href="https://www.pinterest.com/pin/vocaloid-and-co--49539664644467368/" target="_blank">pinterest</a></p>
+        </ul>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => {
+                    if (!response.ok) throw new Error("Header not found");
+                    return response.text();
+                })
+                .then(data => document.getElementById("header").innerHTML = data)
+                .catch(error => console.error("Error loading header:", error));
+        });
+    </script>
+
+</body>

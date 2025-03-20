@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about vocal synthesizers like VOCALOID, Synthesizer V, and UTAU. Explore their features, differences, and how to use them.">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>All About VOCALOIDS!</title>
+</head>
+
+<body>
+
+    <div id="header" fetchpriority="high"></div>
+
+    <main class="showmargin">
+
+        <ol class="center">
+            <li>
+                <p class="q">Define internet backbone in your own words.</p class="q">
+                <pre>   hello
+            
+            </pre>
+            </li>
+            <li>
+                <p class="q">What is the difference between clients and servers on the internet?</p class="q">
+                <pre>   A server is a powerful compreuter that provides resources and services to clients. Clients are computers that use a service that the server provides.</pre>
+            </li>
+            <li>
+                <p class="q">Draw or describe how servers, routers, switches, work stations, and other hardware
+                    components are part of the internet.</p class="q">
+                <pre>
+    Servers: Store and deliver data or services (e.g., websites, emails).
+    Routers: Direct data packets between networks, ensuring they reach the correct destination.
+    Switches: Connect devices within a local network, enabling communication between them.
+    Workstations: End-user devices (e.g., computers, smartphones) that act as clients.
+    Other Hardware: Includes modems, cables, and data centers that support connectivity and data storage.</pre>
+            </li>
+            <li>
+                <p class="q">Describe the Internet Protocol Suite (TCP/IP) model of networking, in general terms,
+                    outlining how this Protocol provides the data transfer mechanism required to establish client/server
+                    relationships.</p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">List at least three examples of internet services that rely on client/server relationships.
+                </p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">What is Hypertext?</p class="q">
+                <pre>   Hypertext is text that contains links to other texts or resources.</pre>
+            </li>
+            <li>
+                <p class="q">How is "the web" related to the internet?</p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">Explain how the Hypertext Transfer Protocol (HTTP) is used to facilitate client/server
+                    interaction.</p class="q">
+                <pre>   HTTP (Hypertext Transfer Protocol) is a Protocol used for transferring web pages and other resources between clients and servers. When a client (browser) requests a webpage, the server responds with the requested data, enabling the display of content.</pre>
+            </li>
+            <li>
+                <p class="q">What is HTTP and how is it different from HTTPS?</p class="q">
+                <pre>   HTTP (Hypertext Transfer Protocol) is a Protocol used for transferring web pages and other resources between clients and servers. When a client (browser) requests a webpage, the server responds with the requested data, enabling the display of content.</pre>
+            </li>
+            <li>
+                <p class="q">Describe and illustrate the development of the Web in general terms using the Web 1.0, Web
+                    2.0, and Web 3.0 generational prearadigms.</p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">Compare and contrast the Web 1.0, Web 2.0, and Web 3.0 stages of development.</p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">Describe the role markup languages play in the Web.</p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">Compare and contrast markup and scripting languages.</p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">Explain the relationship between Standard Generalized Markup Language (SGML), Extensible
+                    markup Language (XML), Hypertext markup Language (HTML), Extensible Hypertext markup Language
+                    (XHTML), Dynamic Hypertext markup Language (DHTML), and markdown (MD).</p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">List some of your own interests, values, beliefs, resources, prior learning, and
+                    experiences.</p class="q">
+                <pre></pre>
+            </li>
+            <li>
+                <p class="q">Describe how CSE1210 may connect to your future occupational choices.</p class="q">
+                <pre></pre>
+            </li>
+        </ol>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => {
+                    if (!response.ok) throw new Error("Header not found");
+                    return response.text();
+                })
+                .then(data => document.getElementById("header").innerHTML = data)
+                .catch(error => console.error("Error loading header:", error));
+        });
+    </script>
+
+</body>
+
+</html>
